@@ -1,0 +1,229 @@
+$tablets: 1150px;
+$phones: 480px;
+
+$blue: #1698d9;
+$light-blue: #2ea8e6;
+$white: #f2f2f2;
+$pink: #d91667;
+$light-pink: #e52e7a;
+$gray: #b3b3b3;
+
+@font-face {
+  font-family: "Exo2Thin";
+  font-weight: 300;
+  font-style: normal;
+
+  src: url("../../fonts/Exo2Thin.woff2") format("woff2"),
+    url("../../fonts/Exo2Thin.woff") format("woff");
+}
+
+$font: "Exo2Thin", "Arial", sans-serif;
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+.base-container {
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 95%;
+  font-family: "Exo2Thin", "Arial", sans-serif;
+  font-size: 32px;
+}
+.title {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 70px;
+
+  text-align: center;
+  color: #fff;
+  @include tablets {
+    margin: 20px 0;
+  }
+  @include phones {
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+}
+.product-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  @include tablets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  @include phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.product-list-item {
+  position: relative;
+  width: 320px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+  &:after {
+    position: absolute;
+    z-index: 0;
+    top: -45px;
+    right: 0;
+    display: inline-block;
+    width: 160px;
+    height: 45px;
+    content: "";
+    border-top: 4px solid $blue;
+    border-right: 4px solid $blue;
+    border-top-right-radius: 12px;
+    background-color: $white;
+  }
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: -45px;
+    left: 22px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 160px;
+    height: 45px;
+    content: "";
+    transform: skew(-45deg);
+    border-top: 4px solid $blue;
+    border-left: 4px solid $blue;
+    background-color: $white;
+  }
+  &:hover {
+    &:after {
+      border-top: 4px solid $light-blue;
+      border-right: 4px solid $light-blue;
+    }
+    &:before {
+      border-top: 4px solid $light-blue;
+      border-left: 4px solid $light-blue;
+    }
+    .product-size {
+      background-color: $light-blue;
+    }
+  }
+  @include tablets {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  @include phones {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+}
+.product-list-item__check {
+  .product-cover {
+    height: 269px;
+  }
+
+  &:after {
+    border-top: 4px solid $pink;
+    border-right: 4px solid $pink;
+  }
+  &:before {
+    border-top: 4px solid $pink;
+    border-left: 4px solid $pink;
+  }
+  .product-size {
+    background-color: $pink;
+  }
+  .product-list-element {
+    border-color: $pink;
+    &:before {
+      top: -5px;
+    }
+  }
+  &:hover {
+    &:after {
+      border-top: 4px solid $light-pink;
+      border-right: 4px solid $light-pink;
+    }
+    &:before {
+      border-top: 4px solid $light-pink;
+      border-left: 4px solid $light-pink;
+    }
+
+    .product-size {
+      background-color: $light-pink;
+    }
+  }
+}
+.product-list-item__disabled {
+  cursor: default;
+
+  &:after {
+    border-top: 4px solid $gray;
+    border-right: 4px solid $gray;
+  }
+  &:before {
+    border-top: 4px solid $gray;
+    border-left: 4px solid $gray;
+  }
+  .product-size {
+    background-color: $gray;
+  }
+  .product-list-element {
+    cursor: default;
+
+    border: 4px solid $gray;
+
+    &:before {
+      top: -5px;
+      background-color: #f2f2f2;
+    }
+  }
+  &:hover {
+    cursor: default;
+
+    &:after {
+      border-top: 4px solid $gray;
+      border-right: 4px solid $gray;
+    }
+    &:before {
+      border-top: 4px solid $gray;
+      border-left: 4px solid $gray;
+    }
+
+    .product-size {
+      background-color: $gray;
+    }
+    .product-list-element {
+      cursor: default;
+      border: 4px solid $gray;
+    }
+  }
+  .product-cover,
+  .product-contents,
+  .product-title,
+  .product-name {
+    opacity: 0.5;
+  }
+}
