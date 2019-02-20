@@ -18,4 +18,39 @@ const dataLoaded = data => {
   };
 };
 
-export { dataLoaded, dataRequested, dataError };
+const productSelected = productId => {
+  return {
+    type: "PRODUCT_SELECTED",
+    Id: productId
+  };
+};
+
+const productDeselected = productId => {
+  return {
+    type: "PRODUCT_DESELECTED",
+    Id: productId
+  };
+};
+
+const productCheckfocused = productId => {
+  return {
+    type: "PRODUCT_CHECK_FOCUSED",
+    Id: productId
+  };
+};
+
+const productCheckdefocused = productId => {
+  return {
+    type: "PRODUCT_CHECK_DEFOCUSED",
+    Id: productId
+  };
+};
+export {
+  dataLoaded,
+  dataRequested,
+  dataError,
+  productSelected,
+  productDeselected,
+  productCheckfocused,
+  productCheckdefocused
+};
