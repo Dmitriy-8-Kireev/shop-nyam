@@ -1,12 +1,12 @@
 import React from "react";
-import ProductList from "../product-list";
+import ProductListContainer from "../../containers/product-list-container";
 
 import "./app.scss";
 
 const App = () => {
   return (
     <main className="base">
-      <ProductList />
+      <ProductListContainer />
     </main>
   );
 };
