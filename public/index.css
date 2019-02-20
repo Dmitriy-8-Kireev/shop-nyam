@@ -1,0 +1,20 @@
+html,
+body {
+  font-size: 15px;
+  font-weight: 400;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.root {
+  background-image: url(https://user-images.githubusercontent.com/35109743/52794922-d1c87300-3081-11e9-93f4-882be4db5f18.jpg);
+  background-position: center center;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
