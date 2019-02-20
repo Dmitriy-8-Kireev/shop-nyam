@@ -1,7 +1,7 @@
 {
   "name": "shop-nyam",
   "homepage": "https://dmitriy-8-kireev.github.io/shop-nyam/",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
@@ -28,7 +28,6 @@
     "gh-pages": "^1.2.0"
   },
   "browserslist": [
-    ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"

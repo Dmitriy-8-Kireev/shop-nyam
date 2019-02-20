@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import ItemContent from "./item-content";
+
 import "./product-list-item.scss";
 
 const ProductListItem = ({
@@ -12,19 +14,9 @@ const ProductListItem = ({
     id,
     title,
     access,
-    name,
-    view,
-    portion,
-    portionnumb,
-    present,
-    presentnumb,
-    review,
-    image,
     description,
     question,
     button,
-    weight,
-    measure,
     disabledtext,
     check,
     revoke,
@@ -46,34 +38,10 @@ const ProductListItem = ({
               {title}
             </p>
           )}
-
-          <div className="product-contents">
-            <h2 className="product-name">
-              {name}
-              <span className="product-view">{view}</span>
-            </h2>
-            <p className="product-portion">
-              <span className="product-portion-numb">{portionnumb}</span>
-              {portion}
-            </p>
-            <p className="product-present">
-              <span className="product-present-numb">{presentnumb}</span>
-              {present}
-            </p>
-            <p className="product-review">{review}</p>
-          </div>
-          <div className="product-size ">
-            <span className="product-size-weight">{weight}</span>
-            <span className="product-size-measure">{measure}</span>
-          </div>
-          <div className="product-cover">
-            <img src={image} alt="cover" className="product-cover-img" />
-          </div>
+          <ItemContent product={product} />
         </div>
         {access ? (
-          <Fragment>
-            <div className="product-description">{description} </div>
-          </Fragment>
+          <div className="product-description">{description} </div>
         ) : (
           <div className="product-disabled">{disabledtext} </div>
         )}
@@ -86,30 +54,9 @@ const ProductListItem = ({
         <p href="#" className="product-title">
           {title}
         </p>
-
-        <div className="product-contents">
-          <h2 className="product-name">
-            {name}
-            <span className="product-view">{view}</span>
-          </h2>
-          <p className="product-portion">
-            <span className="product-portion-numb">{portionnumb}</span>
-            {portion}
-          </p>
-          <p className="product-present">
-            <span className="product-present-numb">{presentnumb}</span>
-            {present}
-          </p>
-          <p className="product-review">{review}</p>
-        </div>
-        <div className="product-size ">
-          <span className="product-size-weight">{weight}</span>
-          <span className="product-size-measure">{measure}</span>
-        </div>
-        <div className="product-cover">
-          <img src={image} alt="cover" className="product-cover-img" />
-        </div>
+        <ItemContent product={product} />
       </div>
+
       {access ? (
         <Fragment>
           <div className="product-question">
