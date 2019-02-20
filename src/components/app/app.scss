@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Exo2Thin";
+  font-weight: 300;
+  font-style: normal;
+
+  src: url("../../fonts/Exo2Thin.woff2") format("woff2"),
+    url("../../fonts/Exo2Thin.woff") format("woff");
+}
+
+$font: "Exo2Thin", "Arial", sans-serif;
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.base {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
