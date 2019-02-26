@@ -1,14 +1,14 @@
 {
-  "main.css": "/shop-nyam/static/css/main.0f209b53.chunk.css",
-  "main.js": "/shop-nyam/static/js/main.29676220.chunk.js",
-  "main.js.map": "/shop-nyam/static/js/main.29676220.chunk.js.map",
-  "static/js/1.e4ee10d8.chunk.js": "/shop-nyam/static/js/1.e4ee10d8.chunk.js",
-  "static/js/1.e4ee10d8.chunk.js.map": "/shop-nyam/static/js/1.e4ee10d8.chunk.js.map",
+  "main.css": "/shop-nyam/static/css/main.527244a4.chunk.css",
+  "main.js": "/shop-nyam/static/js/main.81c66d55.chunk.js",
+  "main.js.map": "/shop-nyam/static/js/main.81c66d55.chunk.js.map",
+  "static/js/1.ffe95e57.chunk.js": "/shop-nyam/static/js/1.ffe95e57.chunk.js",
+  "static/js/1.ffe95e57.chunk.js.map": "/shop-nyam/static/js/1.ffe95e57.chunk.js.map",
   "runtime~main.js": "/shop-nyam/static/js/runtime~main.e04f020e.js",
   "runtime~main.js.map": "/shop-nyam/static/js/runtime~main.e04f020e.js.map",
-  "static/css/main.0f209b53.chunk.css.map": "/shop-nyam/static/css/main.0f209b53.chunk.css.map",
+  "static/css/main.527244a4.chunk.css.map": "/shop-nyam/static/css/main.527244a4.chunk.css.map",
   "static/media/app.scss": "/shop-nyam/static/media/Exo2Thin.5a50f7c2.woff",
   "index.html": "/shop-nyam/index.html",
-  "precache-manifest.17881c04e5f7ce965a3eaeded46c0925.js": "/shop-nyam/precache-manifest.17881c04e5f7ce965a3eaeded46c0925.js",
+  "precache-manifest.9d63af4f702c2aa479ccc415cfb5e82a.js": "/shop-nyam/precache-manifest.9d63af4f702c2aa479ccc415cfb5e82a.js",
   "service-worker.js": "/shop-nyam/service-worker.js"
 }

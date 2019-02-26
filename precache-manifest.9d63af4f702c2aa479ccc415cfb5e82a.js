@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/shop-nyam/static/js/runtime~main.e04f020e.js"
   },
   {
-    "revision": "29676220e4e0b02ec9f6",
-    "url": "/shop-nyam/static/js/main.29676220.chunk.js"
+    "revision": "81c66d55e814352cc836",
+    "url": "/shop-nyam/static/js/main.81c66d55.chunk.js"
   },
   {
-    "revision": "e4ee10d8fbad2046655a",
-    "url": "/shop-nyam/static/js/1.e4ee10d8.chunk.js"
+    "revision": "ffe95e57682353c5d419",
+    "url": "/shop-nyam/static/js/1.ffe95e57.chunk.js"
   },
   {
-    "revision": "29676220e4e0b02ec9f6",
-    "url": "/shop-nyam/static/css/main.0f209b53.chunk.css"
+    "revision": "81c66d55e814352cc836",
+    "url": "/shop-nyam/static/css/main.527244a4.chunk.css"
   },
   {
-    "revision": "2aff7b534a2cf31bd6f54e9286420274",
+    "revision": "0a479c2811184b9ca08e52f1c2ec7847",
     "url": "/shop-nyam/index.html"
   }
 ];
